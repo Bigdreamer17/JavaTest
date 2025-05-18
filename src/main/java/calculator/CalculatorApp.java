@@ -23,6 +23,13 @@ public class CalculatorApp {
         }
         return a / b;
     }
+    
+    // Square root
+    public static double sqrt (double value) {
+    	if (value < 0)
+    		throw new IllegalArgumentException("Negative input not allowed");
+    	return Math.sqrt(value);
+    }
 	public static void main(String[] Args) {
 		double num1 = 10;
         double num2 = 5;
@@ -31,6 +38,7 @@ public class CalculatorApp {
         System.out.println("Subtraction: " + subtract(num1, num2));
         System.out.println("Multiplication: " + multiply(num1, num2));
         System.out.println("Division: " + divide(num1, num2));
+        System.out.println("Square Root: " + sqrt(num1)); 
 	}
 
 }
